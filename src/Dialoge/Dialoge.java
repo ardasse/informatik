@@ -100,9 +100,23 @@ public class Dialoge extends JFrame {
 		contentPane.add(btnAufg8);
 	}
 
+	public boolean zwischen1und100(int zahl) {
+		if(zahl >= 1  && zahl <= 100) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	private void aufg1() {
 		// Aufgabe 1
-		
+		String eingabe = JOptionPane.showInputDialog("Enter a number:");
+		int zahl = Integer.parseInt(eingabe);
+		if(zwischen1und100(zahl)) {
+			JOptionPane.showMessageDialog(this, "Richtige Eingabe!");
+		} else {
+			JOptionPane.showMessageDialog(this, "Falsche Eingabe!");
+		}
 	}
 	
 	private void aufg2() {

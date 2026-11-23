@@ -143,22 +143,40 @@ public class TurtleGrafik extends JFrame {
 	
 	private void aufg1() {
 		// Aufgabe 1
-		
+		t.vor(100);
+		t.drehen(120);
+		t.vor(100);
+		t.drehen(120);
+		t.vor(100);
 	}
 	
 	private void aufg2() {
 		// Aufgabe 2
-		
+		int kantenzahl = 0;
+		while(kantenzahl < 4) {
+			t.vor(200);
+			t.drehen(90);
+			kantenzahl++;
+		}
+		// aufgabe b)
 	}
 	
 	private void aufg3() {
 		// Aufgabe 3
-		
+		int kante = 0;
+		while(kante < 6) {
+			t.vor(100);
+			t.drehen(60);
+			kante++;
+		}
 	}
 	
 	private void aufg4() {
 		// Aufgabe 4
-		
+		for(int i = 0; i < 8; i++) {
+			t.vor(100);
+			t.drehen(45);
+		}
 	}
 	
 	private void aufg5() {
